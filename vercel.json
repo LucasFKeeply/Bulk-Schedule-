@@ -6,8 +6,8 @@
       "permanent": false
     },
     {
-      "source": "/twitter",
-      "destination": "https://www.mailcue.xyz/?utm_source=twitter&utm_medium=organic&utm_campaign=launch",
+      "source": "/X",
+      "destination": "https://www.mailcue.xyz/?utm_source=X&utm_medium=organic&utm_campaign=launch",
       "permanent": false
     },
     {
@@ -16,8 +16,8 @@
       "permanent": false
     },
     {
-      "source": "/twitter-post",
-      "destination": "https://www.mailcue.xyz/?utm_source=twitter&utm_medium=post&utm_campaign=launch",
+      "source": "/X-post",
+      "destination": "https://www.mailcue.xyz/?utm_source=X&utm_medium=post&utm_campaign=launch",
       "permanent": false
     }
   ]
