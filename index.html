@@ -13,8 +13,8 @@
       gtag('config', 'G-VQF81TZHS0');
     </script>
     
-    <title>Mailcue — Bulk Schedule Gmail Sends from a CSV</title>
-    <meta name="description" content="Upload a CSV, preview every email, schedule sends through your own Gmail. No CRM, no monthly fee. Free early access for 100 users.">
+    <title>Mailcue - Bulk Schedule Gmail Sends from a CSV</title>
+    <meta name="description" content="Upload a CSV, preview every email, schedule sends through your own Gmail. No CRM, no monthly fee. Chrome extension pending Google approval. Get notified when it's live.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -227,36 +227,6 @@
             margin-top: 4px;
         }
 
-        /* ===== COUNTER ===== */
-        .spots-counter {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 12px;
-            margin-top: 32px;
-            animation: fadeUp 0.6s ease 0.5s both;
-        }
-        .spots-bar {
-            width: 160px;
-            height: 6px;
-            background: var(--border);
-            border-radius: 3px;
-            overflow: hidden;
-        }
-        .spots-bar-fill {
-            height: 100%;
-            background: var(--accent);
-            border-radius: 3px;
-            width: 2%;
-            transition: width 1s ease;
-        }
-        .spots-text {
-            font-size: 13px;
-            font-weight: 500;
-            color: var(--text-secondary);
-        }
-        .spots-text strong { color: var(--accent); }
-
         /* ===== HOW IT WORKS ===== */
         .section {
             padding: 80px 24px;
@@ -353,7 +323,7 @@
             margin: 0 auto;
         }
 
-        /* App frame — the chrome-extension-like container */
+        /* App frame - the chrome-extension-like container */
         .app-frame {
             background: var(--bg);
             border-radius: 16px;
@@ -815,7 +785,7 @@
                 </div>
                 <span>Mailcue</span>
             </a>
-            <a href="#signup" class="nav-cta">Get early access</a>
+            <a href="#signup" class="nav-cta">Get notified</a>
         </div>
     </nav>
 
@@ -823,26 +793,23 @@
     <section class="hero" id="signup">
         <div class="badge">
             <span class="badge-dot"></span>
-            Now accepting early users
+            Pending Google approval
         </div>
         <h1>Schedule Gmail sends <span class="accent">from a CSV</span></h1>
+        <p style="font-size: 14px; color: var(--text-secondary); margin-top: 8px; margin-bottom: 0;">Already being used by founders for cold outreach.</p>
         <p>Upload your contacts, personalise every email with merge tags, and schedule them to send through your own Gmail. No CRM. No monthly fee.</p>
 
+        <p style="font-size: 15px; color: var(--text-secondary); margin-bottom: 24px; max-width: 480px; margin-left: auto; margin-right: auto;">The extension is currently pending Google's approval. Drop your email and you'll be the first to get the download link the moment it's approved.</p>
         <form class="signup-form" id="signupForm" action="https://formspree.io/f/xaqdvajr" method="POST">
             <input type="email" name="email" placeholder="you@gmail.com" required>
-            <button type="submit">Get early access</button>
+            <button type="submit">Notify me when it's live</button>
         </form>
-        <p class="signup-note" style="font-size: 12px !important;"><span style="font-size: 12px;">*We only need your email to personally add you as an initial user.*</span> <strong style="font-size: 12px;">It's all free, use it as much as your heart desires :)</strong></p>
+        <p class="signup-note" style="font-size: 12px !important;"><span style="font-size: 12px;">No spam. Just one email when it's live.</span></p>
 
         <div class="signup-success" id="signupSuccess">
             <div class="check">✓</div>
             <p>You're on the list!</p>
-            <p class="sub">We'll send you access within 24 hours.</p>
-        </div>
-
-        <div class="spots-counter">
-            <div class="spots-bar"><div class="spots-bar-fill" id="spotsBar"></div></div>
-            <span class="spots-text"><strong id="spotsLeft">97</strong> of 100 spots left</span>
+            <p class="sub">We'll email you the moment the extension is approved.</p>
         </div>
     </section>
 
@@ -871,13 +838,13 @@
         </div>
     </section>
 
-    <!-- UI PREVIEWS — Full App Screens -->
+    <!-- UI PREVIEWS - Full App Screens -->
     <section class="preview-section">
         <p class="section-label">Inside the extension</p>
         <h2 class="section-title" style="margin-bottom: 48px;">See what you're getting</h2>
 
         <!-- ===== SCREEN 1: PREVIEW ===== -->
-        <div class="screen-label">Preview Screen — Emails as Cards</div>
+        <div class="screen-label">Preview Screen - Emails as Cards</div>
         <div class="app-frame" id="screen1">
             <div class="app-header">
                 <div class="app-logo">
@@ -897,7 +864,7 @@
                     <div class="app-dot"></div>
                 </div>
 
-                <div class="app-screen-label">2 of 4 — Preview your emails</div>
+                <div class="app-screen-label">2 of 4 - Preview your emails</div>
 
                 <!-- Mapping chips -->
                 <div class="app-card" style="padding: 12px 14px;">
@@ -918,8 +885,8 @@
                     <div class="app-email-row">
                         <div>
                             <div class="app-email-to">sarah@acmecorp.com</div>
-                            <div class="app-email-subj">Quick check-in — Acme Corp</div>
-                            <div class="app-email-body-preview">Hi Sarah — just wanted to check in and see how things are going at Acme Corp...</div>
+                            <div class="app-email-subj">Quick check-in - Acme Corp</div>
+                            <div class="app-email-body-preview">Hi Sarah, just wanted to check in and see how things are going at Acme Corp...</div>
                         </div>
                         <span class="app-badge app-badge-ready">Ready</span>
                     </div>
@@ -930,7 +897,7 @@
                         <div>
                             <div class="app-email-to">james@widgetltd.com</div>
                             <div class="app-email-subj">Following up</div>
-                            <div class="app-email-body-preview">Hey James — thanks for the chat last week. I wanted to follow up on the...</div>
+                            <div class="app-email-body-preview">Hey James, thanks for the chat last week. I wanted to follow up on the...</div>
                         </div>
                         <span class="app-badge app-badge-ready">Ready</span>
                     </div>
@@ -941,7 +908,7 @@
                         <div class="app-detail-label">Subject</div>
                         <div class="app-detail-val">Following up</div>
                         <div class="app-detail-label">Body</div>
-                        <div class="app-detail-val">Hey James — thanks for the chat last week. I wanted to follow up on the points we discussed. Would love to hear your thoughts when you get a chance.</div>
+                        <div class="app-detail-val">Hey James, thanks for the chat last week. I wanted to follow up on the points we discussed. Would love to hear your thoughts when you get a chance.</div>
                     </div>
                 </div>
 
@@ -950,7 +917,7 @@
                         <div>
                             <div class="app-email-to">emily@startupxyz.com</div>
                             <div class="app-email-subj">Introduction</div>
-                            <div class="app-email-body-preview">Hi Emily — I came across StartupXYZ and thought it would be great to connect...</div>
+                            <div class="app-email-body-preview">Hi Emily, I came across StartupXYZ and thought it would be great to connect...</div>
                         </div>
                         <span class="app-badge app-badge-ready">Ready</span>
                     </div>
@@ -995,7 +962,7 @@
                     <div class="app-dot"></div>
                 </div>
 
-                <div class="app-screen-label">3 of 4 — Pick a send time</div>
+                <div class="app-screen-label">3 of 4 - Pick a send time</div>
 
                 <div class="app-trust" style="margin-bottom: 16px;">
                     <div class="app-trust-btn selected">⏱ Spread across window</div>
@@ -1037,7 +1004,7 @@
         <div class="screen-arrow">↓</div>
 
         <!-- ===== SCREEN 3: STATUS ===== -->
-        <div class="screen-label">Status Screen — Batch Detail</div>
+        <div class="screen-label">Status Screen - Batch Detail</div>
         <div class="app-frame" id="screen3">
             <div class="app-header">
                 <div class="app-logo">
@@ -1067,7 +1034,7 @@
                     <div class="app-email-row">
                         <div>
                             <div class="app-email-to">sarah@acmecorp.com</div>
-                            <div class="app-email-subj">Quick check-in — Acme Corp</div>
+                            <div class="app-email-subj">Quick check-in - Acme Corp</div>
                         </div>
                         <span class="app-badge app-badge-sent">Sent ✓</span>
                     </div>
@@ -1087,7 +1054,7 @@
                         <div class="app-detail-label">Subject</div>
                         <div class="app-detail-val">Following up</div>
                         <div class="app-detail-label">Body</div>
-                        <div class="app-detail-val">Hey James — thanks for the chat last week. I wanted to follow up on the points we discussed. Would love to hear your thoughts when you get a chance.</div>
+                        <div class="app-detail-val">Hey James, thanks for the chat last week. I wanted to follow up on the points we discussed. Would love to hear your thoughts when you get a chance.</div>
                     </div>
                 </div>
 
@@ -1150,11 +1117,11 @@
     <!-- FINAL CTA -->
     <section class="final-cta">
         <div class="final-cta-box">
-            <h2>Ready to try it?</h2>
-            <p>Drop your email and we'll manually add you to the beta. No waitlist, no drip sequence.</p>
+            <h2>Don't miss it going live</h2>
+            <p>The extension is pending Google approval. Drop your email and you'll be the first to get the link the moment it's approved.</p>
             <form class="signup-form" id="signupForm2" action="https://formspree.io/f/xaqdvajr" method="POST">
                 <input type="email" name="email" placeholder="you@gmail.com" required>
-                <button type="submit">Get early access</button>
+                <button type="submit">Notify me when it's live</button>
             </form>
         </div>
     </section>
@@ -1197,13 +1164,6 @@
                         } else {
                             button.textContent = '✓ You\'re in!';
                             button.style.background = 'var(--success)';
-                        }
-
-                        const spotsLeft = document.getElementById('spotsLeft');
-                        const current = parseInt(spotsLeft.textContent);
-                        if (current > 0) {
-                            spotsLeft.textContent = current - 1;
-                            document.getElementById('spotsBar').style.width = ((100 - current + 1) / 100 * 100) + '%';
                         }
                     } else {
                         button.textContent = 'Try again';
