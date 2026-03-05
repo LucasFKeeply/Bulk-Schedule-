@@ -1,0 +1,24 @@
+{
+  "redirects": [
+    {
+      "source": "/reddit",
+      "destination": "https://www.mailcue.xyz/?utm_source=reddit&utm_medium=organic&utm_campaign=launch",
+      "permanent": false
+    },
+    {
+      "source": "/twitter",
+      "destination": "https://www.mailcue.xyz/?utm_source=twitter&utm_medium=organic&utm_campaign=launch",
+      "permanent": false
+    },
+    {
+      "source": "/reddit-post",
+      "destination": "https://www.mailcue.xyz/?utm_source=reddit&utm_medium=post&utm_campaign=launch",
+      "permanent": false
+    },
+    {
+      "source": "/twitter-post",
+      "destination": "https://www.mailcue.xyz/?utm_source=twitter&utm_medium=post&utm_campaign=launch",
+      "permanent": false
+    }
+  ]
+}
