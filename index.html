@@ -16,7 +16,7 @@
 
     <title>Mailcue - Bulk Schedule Gmail Sends from a CSV</title>
     <meta name="description"
-        content="Upload a CSV, preview every email, schedule sends through your own Gmail. No CRM, no monthly fee. Chrome extension pending Google approval. Get notified when it's live.">
+        content="Upload a CSV, preview every email, schedule sends through your own Gmail. No CRM, no monthly fee. Free Chrome extension.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -973,7 +973,7 @@
                 </div>
                 <span>Mailcue</span>
             </a>
-            <a href="#signup" class="nav-cta">Get notified</a>
+            <a href="https://chromewebstore.google.com/detail/mailcue-%E2%80%94-bulk-email-sche/ionadffckcmgfdchpmaeddeikimencnl" class="nav-cta" target="_blank">Add to Chrome</a>
         </div>
     </nav>
 
@@ -981,28 +981,20 @@
     <section class="hero" id="signup">
         <div class="badge">
             <span class="badge-dot"></span>
-            Pending Google approval
+            Now available on Chrome
         </div>
         <h1>Schedule Gmail sends <span class="accent">from a CSV</span></h1>
         <p>Upload your contacts, personalise every email with merge tags, and schedule them to send through your own
             Gmail. No CRM. No monthly fee.</p>
 
-        <p
-            style="font-size: 15px; color: var(--text-secondary); margin-bottom: 24px; max-width: 480px; margin-left: auto; margin-right: auto;">
-            The extension is currently pending Google's approval. Drop your email and you'll be the first to get the
-            download link the moment it's approved.</p>
-        <form class="signup-form" id="signupForm" action="https://formspree.io/f/xaqdvajr" method="POST">
-            <input type="email" name="email" placeholder="you@gmail.com" required>
-            <button type="submit">Notify me when it's live</button>
-        </form>
-        <p class="signup-note" style="font-size: 12px !important;"><span style="font-size: 12px;">No spam. Just one
-                email when it's live.</span></p>
-
-        <div class="signup-success" id="signupSuccess">
-            <div class="check">✓</div>
-            <p>You're on the list!</p>
-            <p class="sub">We'll email you the moment the extension is approved.</p>
+        <div style="animation: fadeUp 0.6s ease 0.3s both;">
+            <a href="https://chromewebstore.google.com/detail/mailcue-%E2%80%94-bulk-email-sche/ionadffckcmgfdchpmaeddeikimencnl"
+                target="_blank"
+                style="display: inline-block; font-family: 'DM Sans', sans-serif; font-size: 15px; font-weight: 600; padding: 14px 32px; background: var(--accent); color: white; border: none; border-radius: 10px; cursor: pointer; transition: all 0.2s; text-decoration: none;">
+                Add to Chrome — it's free
+            </a>
         </div>
+        <p class="signup-note" style="font-size: 12px !important;"><span style="font-size: 12px;">Free Chrome extension. No signup required.</span></p>
     </section>
 
     <!-- HOW IT WORKS -->
@@ -1346,13 +1338,13 @@
     <!-- FINAL CTA -->
     <section class="final-cta">
         <div class="final-cta-box">
-            <h2>Don't miss it going live</h2>
-            <p>The extension is pending Google approval. Drop your email and you'll be the first to get the link the
-                moment it's approved.</p>
-            <form class="signup-form" id="signupForm2" action="https://formspree.io/f/xaqdvajr" method="POST">
-                <input type="email" name="email" placeholder="you@gmail.com" required>
-                <button type="submit">Notify me when it's live</button>
-            </form>
+            <h2>Ready to send smarter?</h2>
+            <p>Install Mailcue and schedule your first batch in under a minute.</p>
+            <a href="https://chromewebstore.google.com/detail/mailcue-%E2%80%94-bulk-email-sche/ionadffckcmgfdchpmaeddeikimencnl"
+                target="_blank"
+                style="display: inline-block; font-family: 'DM Sans', sans-serif; font-size: 15px; font-weight: 600; padding: 14px 32px; background: var(--accent); color: white; border: none; border-radius: 10px; cursor: pointer; transition: all 0.2s; text-decoration: none; margin-top: 8px;">
+                Add to Chrome — it's free
+            </a>
         </div>
     </section>
 
@@ -1363,49 +1355,6 @@
     </footer>
 
     <script>
-        // Smooth scroll for nav CTA
-        document.querySelector('.nav-cta').addEventListener('click', function (e) {
-            e.preventDefault();
-            document.querySelector('#signup').scrollIntoView({ behavior: 'smooth' });
-        });
-
-        // Form submission handling
-        document.querySelectorAll('.signup-form').forEach(form => {
-            form.addEventListener('submit', async function (e) {
-                e.preventDefault();
-                const email = this.querySelector('input[type="email"]').value;
-                const button = this.querySelector('button');
-                const originalText = button.textContent;
-                button.textContent = 'Joining...';
-                button.disabled = true;
-
-                try {
-                    const response = await fetch(this.action, {
-                        method: 'POST',
-                        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
-                        body: JSON.stringify({ email: email })
-                    });
-
-                    if (response.ok) {
-                        if (this.id === 'signupForm') {
-                            this.style.display = 'none';
-                            document.querySelector('.signup-note').style.display = 'none';
-                            document.getElementById('signupSuccess').style.display = 'block';
-                        } else {
-                            button.textContent = '✓ You\'re in!';
-                            button.style.background = 'var(--success)';
-                        }
-                    } else {
-                        button.textContent = 'Try again';
-                        button.disabled = false;
-                    }
-                } catch (err) {
-                    button.textContent = 'Try again';
-                    button.disabled = false;
-                }
-            });
-        });
-
         // Scroll reveal for cards and app frames
         const observer = new IntersectionObserver((entries) => {
             entries.forEach((entry, i) => {
